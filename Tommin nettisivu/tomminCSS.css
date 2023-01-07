@@ -1,0 +1,97 @@
+
+body{
+    font-family: "Comic Sans Ms";
+    background-color: bisque;
+}
+
+header{
+    display: flex;
+    justify-content:space-evenly;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #0078da;
+    text-align: center;
+    font-size: 25px;
+}
+#buttonDiv{
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    background-color: #fcde49;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+#pic1{
+    display: block;
+}
+#aloita{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: auto;
+}
+.hide{
+    display: none;
+}
+.green{
+    background-color: #00f094;
+    display: inline;
+    padding: 3px;
+    padding-top: 0%;
+    border: 2px solid black;
+}
+form{
+    background-color: #00f0c8;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+form button{
+    background-color: #de49fc;
+    border-radius: 3px;
+}
+form button:hover{
+    background-color: #ff0303;
+    border-radius: 3px;
+    color: #000000;
+}
+.end{
+    background-color: #24da00;
+    display: inline;
+    padding: 2px;
+}
+
+footer{
+    justify-content:space-evenly;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #0078da;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+@media (max-width: 900px){
+    img.away1{
+        display: none;
+    }
+}
+@media (max-width: 600px){
+    img.away2{
+        display: none;
+    }
+    #pic1{
+        display: none;
+    }
+}
