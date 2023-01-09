@@ -1,0 +1,69 @@
+$background-color: #efefef;
+$highlight-colour: pink;
+
+@mixin theme ($theme: green){
+    
+    h1{
+        color: $theme;
+
+    } 
+    border-color: $theme;
+    .left ul li::before{
+        color: $theme
+    }
+}
+@if class != hidden {
+    font-size: large;
+} 
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #efefef;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    @include theme;
+}
+main {
+      
+    border-top: 1px solid $highlight-colour;
+    @include theme;
+}
+footer {
+    clear: both;
+    border-top: 1px solid $highlight-colour;
+    padding-top: 1rem;
+    @include theme;
+}
+footer span {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: $highlight-colour;
+}
+.left {
+    float: left;
+    width: 20%;
+}
+.left ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+.left ul li::before {
+    content: "\2022";
+    color: $highlight-colour;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.right {
+    float: left;
+    width: 80%;
+    padding: 1rem;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color:  #000;
+}

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  border-color: green;
+}
+header h1 {
+  color: green;
+}
+header .left ul li::before {
+  color: green;
+}
+
+main {
+  border-top: 1px solid pink;
+  border-color: green;
+}
+main h1 {
+  color: green;
+}
+main .left ul li::before {
+  color: green;
+}
+
+footer {
+  clear: both;
+  border-top: 1px solid pink;
+  padding-top: 1rem;
+  border-color: green;
+}
+footer h1 {
+  color: green;
+}
+footer .left ul li::before {
+  color: green;
+}
+
+footer span {
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: pink;
+}
+
+.left {
+  float: left;
+  width: 20%;
+}
+
+.left ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.left ul li::before {
+  content: "•";
+  color: pink;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.right {
+  float: left;
+  width: 80%;
+  padding: 1rem;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #000;
+}
+.hidden{
+  display: none;
+}
+#linkit{
+  display: none;
+}
+div + div{
+background-color: aqua;
+}
+div > img{
+  border: dotted 5px crimson;
+}
+[class*="btn"]{
+  background-color: bisque;
+}
+li ~ li{
+  background-color: greenyellow;
+}
+:hover{
+  background-color: rebeccapurple;
+}
+
+:link{
+  background-color: red;
+}
+div:first-child(){
+  font-weight: bold;
+}
+@media (max-width: 900px){
+  #linkit{
+      display: inline;
+  } 
+  #nav{
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=builtCSS.css.map */
