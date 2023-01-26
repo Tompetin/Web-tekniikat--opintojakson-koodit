@@ -1,3 +1,4 @@
+/* I used mixin and a variable to give a different color */
 $background-color: #efefef;
 $highlight-colour: pink;
 
@@ -12,9 +13,7 @@ $highlight-colour: pink;
         color: $theme
     }
 }
-@if class != hidden {
-    font-size: large;
-} 
+
 
 * {
     box-sizing: border-box;
